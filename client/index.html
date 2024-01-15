@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="./client.js" type="module" defer></script>
+</head>
+
+<body>
+	<nav>
+		<h1>Tic Tac Toe</h1>
+	</nav>
+	<div id="screen">
+		<div class="container" id="login">
+			<h3>Enter your name</h3>
+			<input id="username" type="text" placeholder="Your name...">
+			<button id="login-button">Login</button>
+		</div>
+		<div class="container" id="lobby">
+			<h3>Waiting for opponent...</h3>
+			<p><span id="player-count">0</span> players online</p>
+			<button id="logout-button">Logout</button>
+		</div>
+		<div class="container" id="game">
+			<div id="players">
+				<div id="player1" class="player">
+					<div class="player-info">
+						<p id="player1-name" class="name">X</p>
+						<p class="wins"><span id="player1-wins">0</span> win(s)</p>
+					</div>
+					<div id="player1-symbol" class="symbol"></div>
+				</div>
+				<div id="player2" class="player">
+					<div id="player2-symbol" class="symbol"></div>
+					<div class="player-info">
+						<p id="player2-name" class="name">O</p>
+						<p class="wins"><span id="player2-wins">0</span> win(s)</p>
+					</div>
+
+				</div>
+			</div>
+			<div id="board">
+				<div id="tile-1" class="tile"></div>
+				<div id="tile-2" class="tile"></div>
+				<div id="tile-3" class="tile"></div>
+				<div id="tile-4" class="tile"></div>
+				<div id="tile-5" class="tile"></div>
+				<div id="tile-6" class="tile"></div>
+				<div id="tile-7" class="tile"></div>
+				<div id="tile-8" class="tile"></div>
+				<div id="tile-9" class="tile"></div>
+			</div>
+			<button id="exit-button">Exit</button>
+		</div>
+	</div>
+</body>
+
+</html>
