@@ -3,7 +3,7 @@ Tic Tac Toe game using native websockets.
 
 I used the VSCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-To adapt it to your needs, you need to change the websocket address in `client/client.js` (search for `socket = new WebSocket`).
+To adapt it to your needs, you need to change the websocket address in `client/client.js` (search for `socket = new WebSocket`), and depending on the protocol (http or https), you may need to change `ws` to `wss` in the address.
 
 You can also change the port in the first lines of `server/src/server.js` to fit your needs.
 
